@@ -1,0 +1,14 @@
+import numpy as np
+from PIL import Image
+
+# Step 1: Load the NumPy logo image
+image_path = 'numpy_logo.png'  # Replace with the path to the downloaded logo image
+image = Image.open('numpy_logo.png')
+
+# Step 2: Convert the image to a NumPy array
+logo_array = np.array(image)
+
+# Step 3: Save the NumPy array as a .npy file
+np.save('numpy logo.npy', logo_array)
+
+print("Logo saved successfully!")
